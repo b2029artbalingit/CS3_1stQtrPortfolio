@@ -7,28 +7,28 @@
     <!-- Enter your tags below until the script tag -->
     
     <label> Meal Price:
-    <input type="number" id="mp">  </input>
+    <input type="text" id="mp">  </input>
     </label>
     <br>
 
     <label> Tip:
-    <input type="number" id="tip">  </input>
+    <input type="text" id="tip">  </input>
     </label>
     <br>
 
     <label> Service Charge: 
-    <input type="number" id="sc">  </input>
+    <input type="text" id="sc">  </input>
     </label>
     <br>
     
     <h2> <button onclick="totalMeal()">Accept Input</button> </h2>
 
-    <script>
+    <script> 
         function totalMeal() {
-              // place your JS code here
-            var mp;
-            var tip;
-            var sc;
+             // place your JS code here
+            var mp = parseFloat(document.getElementById("mp").value);
+            var tip = parseFloat(document.getElementById("tip").value);
+            var sc = parseFloat(document.getElementById("sc").value);
             var totalCost;
             var totalCost = mp + tip + (sc / 100 * mp);
 
