@@ -30,8 +30,8 @@
             var mp = parseFloat(document.getElementById("mp").value);
             var tip = parseFloat(document.getElementById("tip").value);
             var sc = parseFloat(document.getElementById("sc").value);
-            var totalCost;
-            var totalCost = mp + tip + (sc / 100 * mp);          
+            var resultElement = document.getElementById("result");
+            var totalCost = mp + tip + (sc / 100 * mp);            
         }
             resultElement.innerHTML = "Total Cost: " + totalCost.toFixed(2);
 
