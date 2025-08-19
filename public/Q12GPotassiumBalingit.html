@@ -22,6 +22,7 @@
     <br>
     
     <h2> <button onclick="totalMeal()">Accept Input</button> </h2>
+    <p id="result"></p>
 
     <script> 
         function totalMeal() {
@@ -30,11 +31,10 @@
             var tip = parseFloat(document.getElementById("tip").value);
             var sc = parseFloat(document.getElementById("sc").value);
             var totalCost;
-            var totalCost = mp + tip + (sc / 100 * mp);
-
-            document.write("Total Meal: " + totalCost);
-;
+            var totalCost = mp + tip + (sc / 100 * mp);          
         }
+            document.getElementById("result").innerHTML = "Total Cost: " + totalCost.toFixed(2);
+        
     </script>
 
 </body>
