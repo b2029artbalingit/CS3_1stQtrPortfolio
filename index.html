@@ -7,26 +7,69 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <style> 
     body {
-      font-family: 'Dancing Script', cursive;
-      margin: 20px;
-      background-color: rgb(132, 153, 181);
-    }
-    h1 {
-      color: #353b5b;
-    }
-    nav ul {
-      list-style-type: none;
+      font-family: "Dancing Script", cursive;
+      background: linear-gradient(to right, #626e8e, #203a43, #2c5364); /* cool blue gradient */
+      color: #f5faff;
+      margin: 0;
       padding: 0;
     }
-    nav ul li {
-      margin: 10px 0;
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.3);
     }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
     nav ul li a {
       text-decoration: none;
-      color: #353b5b;
+      color: #a3d5ff;
+      font-weight: bold;
+      padding: 10px;
+      transition: 0.3s;
     }
+
     nav ul li a:hover {
-      text-decoration: underline;
+      color: #ffffff;
+      border-bottom: 2px solid #6ec1e4;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #b3e5fc;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 50px;
+      color: #9ecdf2;
     }
   </style>
 </head>
