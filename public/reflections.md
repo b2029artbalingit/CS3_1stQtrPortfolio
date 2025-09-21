@@ -20,6 +20,7 @@
 **Effective activities:**
 >   1. Q1 3rd Graded Exercise (Guessing Game) on JS IO Statements - I find this effective in understanding the if, else if, else statements because it shows how the program makes decisions based on different conditions. Each time the user inputs a guess, it gives feedback on whether the number is high, low, or correct, which helps us see how conditions are checked step by step until the right one matches.
 >   2. Q1 4th Graded Exercise - Hola - I find this effective in understanding the switch statements because it shows how the program picks the right option from many choices based on the users input. It makes it simpler and easier to read instead of writing a long chain of if, else if, and else.
+
 **Not Effective Activities:**
 >   1. XCredit on the the use markdown file and on SONA - I find this not effective because it doesn't really teach us much of the main topics in JavaScript. It's mostly just analyzing on what we've noticed on the SONA and an additional bonus.
 >   2. Q1 1st Non-Graded Exercise: Variable Declaration - I find this not effective because it just tells you what to do instead of figuring how to run the code out ourselves. Though it's helpful, we can rely on the past lectures to help us declare the variables, use the arithmetic operators, and successfully make the code run. 
