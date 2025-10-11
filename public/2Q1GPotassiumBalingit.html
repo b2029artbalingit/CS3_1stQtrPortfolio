@@ -6,148 +6,184 @@
   <title>Potassium Tuesday Schedule !!!</title>
   <style>
     body {
-      font-family: "Poppins", sans-serif;
-      background-color: #FFF8E1;
-      background-image: 
-        linear-gradient(to bottom, rgba(255, 240, 180, 0.3) 1px, transparent 1px),
-        repeating-linear-gradient(to bottom, #fff9e6 0px, #fff9e6 28px, #fae8b5 29px, #fae8b5 30px);
-      background-size: 100% 30px;
-      color: #4E342E;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      background: #FFD54F;
-      display: inline-block;
-      padding: 15px 40px;
-      border-radius: 20px;
-      box-shadow: 0 6px 0 #f9a825, 0 8px 15px rgba(0, 0, 0, 0.1);
-      color: #3E2723;
-      font-size: 2.2rem;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-      transform: rotate(-1.5deg);
-      margin-top: 50px;
-      position: relative;
-    }
-    h1::before, h1::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 20px;
-      background: repeating-linear-gradient(
-        45deg,
-        #fbc02d,
-        #fbc02d 5px,
-        #fdf292 5px,
-        #fff59d 10px
-      );
-      top: -10px;
-      transform: rotate(-8deg);
-      opacity: 0.8;
-    }
-    h1::before { left: -20px; }
-    h1::after { right: -20px; transform: rotate(8deg); }
-    table {
-      border-collapse: collapse;
-      margin: 60px auto;
-      width: 80%;
-      background-color: #fffef8;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      border-radius: 25px;
-      overflow: hidden;
-      font-size: 1.2rem;
-      border: 4px double #fbc02d;
-      position: relative;
-    }
-    table::before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 30%;
-      width: 40%;
-      height: 20px;
-      background: #ffe082;
-      border-radius: 8px;
-      transform: rotate(-1deg);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      opacity: 0.7;
-    }
-    th, td {
-      border: 1px solid #F9A825;
-      padding: 18px;
-      text-align: center;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    th {
-      background-color: #FFECB3;
-      color: #3E2723;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
-      border-bottom: 3px solid #fbc02d;
-    }
-    tr:nth-child(even) {
-      background-color: #FFFDE7;
-    }
-    tr:nth-child(odd) {
-      background-color: #FFF8E1;
-    }
-    tr:hover td {
-      background-color: #FFD54F;
-      transform: scale(1.01);
-    }
-    .highlight td {
-      background-color: #FFEE58 !important;
-      transform: scale(1.02);
-    }
-    td:contains("Break"),
-    td:contains("Lunch"),
-    td:contains("Study Period") {
-      background-color: #fff9c4;
-      font-style: italic;
-    }
-    table::after {
-      position: absolute;
-      font-size: 2rem;
-      color: #ffefa6;
-      right: 20px;
-      bottom: 10px;
-      opacity: 0.5;
-    }
-    .footer {
-      margin: 50px 0;
-      text-align: center;
-      color: #3E2723;
-      font-size: 1.2rem;
-    }
-    img {
-      width: 80%;
-      max-width: 900px;
-      height: 600px; 
-      object-fit: cover; 
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-      display: block;
-      margin: 25px auto;
-      border: 4px solid #FFD54F;
-      background-color: #fffef8;
-    }
-    iframe {
-      width: 80%;             
-      max-width: 900px;        
-      aspect-ratio: 16 / 9;       
-      border-radius: 15px;      
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
-      display: block;             
-      margin: 25px auto;         
-      border: 4px solid #FFD54F;  
-      background-color: #fffef8;  
-    }
+  font-family: "Poppins", sans-serif;
+  background-color: #FFF8E1;
+  background-image:
+    linear-gradient(to bottom, rgba(255, 240, 180, 0.3) 1px, transparent 1px),
+    repeating-linear-gradient(to bottom, #fff9e6 0px, #fff9e6 28px, #fae8b5 29px, #fae8b5 30px);
+  background-size: 100% 30px;
+  color: #4E342E;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  background: #FFD54F;
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 0 #f9a825, 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: #3E2723;
+  font-size: 2.2rem;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  transform: rotate(-1.5deg);
+  margin-top: 50px;
+  position: relative;
+}
+h1::before, h1::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  background: repeating-linear-gradient(
+    45deg,
+    #fbc02d,
+    #fbc02d 5px,
+    #fdf292 5px,
+    #fff59d 10px
+  );
+  top: -10px;
+  transform: rotate(-8deg);
+  opacity: 0.8;
+}
+h1::before { left: -20px; }
+h1::after { right: -20px; transform: rotate(8deg); }
+.header-container {
+  text-align: center;
+}
+.made-by {
+  display: block;
+  margin: 12px auto 0 auto;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  color: #4E342E;
+  font-size: 1.05rem;
+  background: #FFF59D;
+  padding: 10px 18px;
+  border-radius: 6px 18px 6px 18px;
+  box-shadow:
+    3px 3px 0 #fbc02d,
+    6px 6px 10px rgba(0, 0, 0, 0.1);
+  transform: rotate(-1.2deg);
+  position: relative;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.3);
+}
+.made-by::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 20%;
+  width: 60%;
+  height: 12px;
+  background: rgba(255, 255, 200, 0.7);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  transform: rotate(1.5deg);
+}
+table {
+  border-collapse: collapse;
+  margin: 60px auto;
+  width: 80%;
+  background-color: #fffef8;
+  box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
+  border-radius: 25px;
+  overflow: hidden;
+  font-size: 1.2rem;
+  border: 4px double #fbc02d;
+  position: relative;
+}
+table::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 30%;
+  width: 40%;
+  height: 20px;
+  background: #ffe082;
+  border-radius: 8px;
+  transform: rotate(-1deg);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  opacity: 0.7;
+}
+th, td {
+  border: 1px solid #F9A825;
+  padding: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+th {
+  background-color: #FFECB3;
+  color: #3E2723;
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+  border-bottom: 3px solid #fbc02d;
+}
+tr:nth-child(even) {
+  background-color: #FFFDE7;
+}
+tr:nth-child(odd) {
+  background-color: #FFF8E1;
+}
+tr:hover td {
+  background-color: #FFD54F;
+  transform: scale(1.01);
+}
+.highlight td {
+  background-color: #FFEE58 !important;
+  transform: scale(1.02);
+}
+td:contains("Break"),
+td:contains("Lunch"),
+td:contains("Study Period") {
+  background-color: #fff9c4;
+  font-style: italic;
+}
+table::after {
+  position: absolute;
+  font-size: 2rem;
+  color: #ffefa6;
+  right: 20px;
+  bottom: 10px;
+  opacity: 0.5;
+}
+.footer {
+  margin: 50px 0;
+  text-align: center;
+  color: #3E2723;
+  font-size: 1.2rem;
+}
+img {
+  width: 80%;
+  max-width: 900px;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 25px auto;
+  border: 4px solid #FFD54F;
+  background-color: #fffef8;
+}
+iframe {
+  width: 80%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 25px auto;
+  border: 4px solid #FFD54F;
+  background-color: #fffef8;
+}
   </style>
 </head>
   <body>
-    <h1> Potassium Tuesday Schedule !!! </h1>
-    <h2> Made by: BALINGIT, Arabella Roz T. of 9 - Potassium </h2>
+    <div class="header-container">
+    <div class="header">
+    <h1>Potassium Tuesday Schedule !!!</h1>
+    </div>
+    <h1 class="made-by"> Made by: BALINGIT, Arabella Roz T. of 9 - Potassium </h1>
+    </div>
     <table>
       <tr>
       <th> Time </th>
