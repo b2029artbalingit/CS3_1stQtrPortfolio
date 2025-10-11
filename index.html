@@ -49,20 +49,19 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .nav a {
-      flex: 1 1 20%;
-      box-sizing: border-box;
-      text-decoration: none;
-      color: #3b4b5c;
-      font-size: 1.2rem;   
-      font-weight: bold;
-      position: relative;
-      padding: 20px; 
-      min-height: 20px;       
-      display: flex;           
-      align-items: center;     
-      justify-content: center;
-      transition: all 0.3s ease;
-      text-align: center;
+    flex: 1 1 20%;
+    text-decoration: none;
+    color: #3b4b5c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     }
     .nav a::after {
       content: "";
@@ -78,9 +77,10 @@
       width: 100%;
     }
     .nav a:hover {
-      background: #cbdced;
-      border-radius: 8px;
-    }
+    background: #cbdced;
+    box-shadow: 0 0 6px rgba(59, 75, 92, 0.4);
+    transform: scale(1.02);
+  }
     .project-item {
       background: #e6f0fa;
       color: #3b4b5c;
