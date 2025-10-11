@@ -23,17 +23,33 @@
       font-size: 3rem;
       color: #3b4b5c;
     }
+    .quarter-card {
+      background: white;
+      color: #3b4b5c;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 40px auto 20px auto;
+      padding: 15px 30px;
+      border-radius: 10px;
+      display: block;
+      box-shadow: 0 4px 8px #3b4b5c;
+      width: 50%;
+      max-width: 600px;
+    }
     .nav {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly; 
-      flex: 1 1 100%; 
       background: #e6f0fa;
-      padding: 20px;    
-      margin-top: 20px;  
+      padding: 20px;
+      margin: 20px 0;  
+      width: 100vw;      
+      border-radius: 0;   
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .nav a {
-      width: 20%;
+      flex: 1 1 20%;
       box-sizing: border-box;
       text-decoration: none;
       color: #3b4b5c;
@@ -45,6 +61,8 @@
       display: flex;           
       align-items: center;     
       justify-content: center;
+      transition: all 0.3s ease;
+      text-align: center;
     }
     .nav a::after {
       content: "";
@@ -59,10 +77,9 @@
     .nav a:hover::after {
       width: 100%;
     }
-    .project-list {
-      margin: 40px auto;
-      width: 80%;
-      max-width: 800px;
+    .nav a:hover {
+      background: #cbdced;
+      border-radius: 8px;
     }
     .project-item {
       background: #e6f0fa;
@@ -70,47 +87,35 @@
       text-align: center;
       font-size: 1.5rem;
       padding: 20px;
-      margin: 15px 0;
+      margin: 15px 0;      
       font-weight: bold;
-      border-radius: 5px;
+      border-radius: 0;    
+      width: 100vw;          
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .quarter-card {
-      background: white;
-      color: #3b4b5c;
-      font-size: 1.5rem;
-      font-weight: bold;
-      text-align: center;
-      margin: 20px auto;
-      padding: 15px 30px;
-      border-radius: 10px;
-      display: block;
-      box-shadow: 0 4px 8px  #3b4b5c;
-      width: 50%;
-      max-width: 600px;
-}
   </style>
 </head>
 <body>
   <header class="header">
    <h1>Links to Balingit's work</h1>
    </header>
-   <div class="quarter-card">
-    First Quarter
-    </div>
-   <div class="nav">
+   <div class="quarter-card"> First Quarter </div>
+    <div class="nav">
       <a href="./public/Q1_1stGraded.html"> First Exercise </a> 
       <a href="./public/Q11stNGPotassiumBalingit.html"> Q1 1st Non-Graded</a> 
       <a href="./public/Q12GPotassiumBalingit.html"> Second Graded Exercise </a> 
       <a href="./public/Q13GPotassiumBalingit.html"> Third Graded Exercise </a> 
    </div>
-   <nav>
     <div class="nav">
       <a href="public/Digital Garden Part 5 - Personal Homepage.html"> Digital Garden Part 5 - Personal Homepage </a> 
       <a href="public/Part 4 – Hard‑Coded Word Guessing Game.html"> Part 4 – Hard‑Coded Word Guessing Game </a>
     </div>
-    <div class="project-item"> Coming Soon... </div>
-    <div class="project-item"> Coming Soon... </div>
-    <div class="project-item"> Coming Soon... </div>
-   </nav>
+
+    <div class="quarter-card"> Second Quarter </div>
+     <div class="nav">
+      <a href="public/2Q1GPotassiumBalingit.html"> 1st Graded Exercise on Creating your First Website </a> 
+     </div>
+     <div class="project-item">Coming Soon...</div>
+     <div class="project-item">Coming Soon...</div>
 </body>
 </html>
