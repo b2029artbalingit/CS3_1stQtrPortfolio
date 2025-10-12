@@ -189,10 +189,61 @@
       position: relative;
       top: 5px;
     }
+    .other-schedules h2 {
+      font-family: "Poppins", sans-serif;
+      color: #4E342E;
+      font-size: 1.5rem;
+      width: 80%;
+      margin: auto;
+      margin-top: -30px;
+      line-height: 30px;
+      padding: 15px 0;
+      text-align: center;
+      background: transparent;
+      position: relative;
+      top: 5px;
+    }
+    .other-schedules h2 a {
+      text-decoration: none;
+      color: #3E2723;
+      background-color: #FFF59D; 
+      display: inline-block;
+      padding: 12px 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 0 #fbc02d, 0 6px 10px rgba(255, 204, 128, 0.4);
+      transition: all 0.2s ease;
+      transform: rotate(-1.5deg);
+      position: relative;
+    }
+    .other-schedules h2 a::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      width: 60%;
+      height: 12px;
+      background: repeating-linear-gradient(
+        45deg,
+    #ffe082,
+    #ffe082 4px,
+    #fff9c4 4px,
+    #fff9c4 8px
+  );
+      border-radius: 1px;
+      opacity: 0.8;
+    }
+    .other-schedules h2 a:hover {
+      background-color: #FFEB3B;
+      transform: rotate(0deg) scale(1.05);
+      box-shadow: 0 6px 0 #fbc02d, 0 8px 15px rgba(0,0,0,0.2);
+    }
+    .other-schedules h2 + h2 {
+      margin-top: 3px; 
+    }
     .other-schedules {
       text-align: center;
       color: #4E342E;
-      margin-top: -14px;
+      margin-top: 20px;
     }
     .other-schedules a {
       text-decoration: none; 
