@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Potassium Tuesday Schedule !!!</title>
+  <meta name="description" content="Potassium Tuesday Schedule">
+  <meta name="author" content="BALINGIT, Arabella Roz T.">
   <style>
     body {
       font-family: "Poppins", sans-serif;
@@ -260,6 +262,24 @@
       background-color: #FFD54F;
       transform: scale(1.01)translateY(10px);
     }
+    .footer-box {
+      width: 80%;
+      margin: 60px auto 40px;
+      background-color: #fffef8;
+      border: 4px double #fbc02d;
+      border-radius: 25px;
+      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+    .copyright {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.2rem;
+      color: #5d4037;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+      margin: 0;
+    }
   </style>
 </head>
   <body>
@@ -355,6 +375,11 @@
     <h2> <a href="https://ninatuddao.github.io/CS3_1stQtrPortfolio/public/2Q1GPotassiumTuddao.html"> Potassium Thursday Schedule </a> </h2>
     <h2> <a href="https://ejmpurisima.github.io/CS3_1stQtrPortfolio/public/2Q1GPotassiumPurisima.html"> Potassium Friday Schedule </a> </h2>
     </div>
+    <footer class="footer-box">
+    <p class="copyright">
+    &copy; <span id="year"></span> Arabella Roz T. Balingit. All rights reserved.
+    </p>
+    </footer>
     <script>
     const groups = ["physics", "compsci"];
     groups.forEach(group => {
@@ -368,6 +393,7 @@
         });
       });
     });
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
   </body>
 </html>
