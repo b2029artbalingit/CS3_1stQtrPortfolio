@@ -9,25 +9,25 @@
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background-color: #F6F7C4;
+      background-color: #FFF8E1;
       background-image:
-      linear-gradient(to bottom, rgba(246, 247, 196, 0.3) 1px, transparent 1px),
-      repeating-linear-gradient(to bottom, #fafbe2 0px, #fafbe2 28px, #f2f4b6 29px, #f2f4b6 30px);
+      linear-gradient(to bottom, rgba(255, 240, 180, 0.3) 1px, transparent 1px),
+      repeating-linear-gradient(to bottom, #fff9e6 0px, #fff9e6 28px, #fae8b5 29px, #fae8b5 30px);
       background-size: 100% 30px;
-      color: #3E2723;
+      color: #4E342E;
       text-align: center;
       margin: 0;
       padding: 0 30px;
     }
     h1 {
-      background: #F6F7C4;
+      background: #FFD54F;
       display: inline-block;
       padding: 15px 40px;
       border-radius: 20px;
-      box-shadow: 0 6px 0 #e9e79e, 0 10px 25px rgba(255, 204, 128, 0.4);
-      color: #2E1E12;
+      box-shadow: 0 6px 0 #f9a825, 0 10px 25px rgba(255, 204, 128, 0.4);
+      color: #3E2723;
       font-size: 2.2rem;
-      text-shadow: 0 2px 4px rgba(200, 200, 100, 0.5);
+      text-shadow: 0 2px 4px rgba(255, 204, 128, 0.4);
       transform: rotate(-1.5deg);
       margin-top: 50px;
       position: relative;
@@ -39,10 +39,10 @@
       height: 20px;
       background: repeating-linear-gradient(
         45deg,
-    #E6E88A,
-    #E6E88A 5px,
-    #F6F7C4 5px,
-    #F6F7C4 10px
+    #fbc02d,
+    #fbc02d 5px,
+    #fdf292 5px,
+    #fff59d 10px
   );
       top: -10px;
       transform: rotate(-8deg);
@@ -58,17 +58,17 @@
       margin: 12px auto 0 auto;
       width: fit-content;
       font-family: "Poppins", sans-serif;
-      color: #3E2723;
+      color: #4E342E;
       font-size: 1.05rem;
-      background: #F6F7C4;
+      background: #FFF59D;
       padding: 10px 18px;
       border-radius: 6px 18px 6px 18px;
       box-shadow:
-        3px 3px 0 #E6E88A,
-        6px 6px 10px rgba(210, 210, 140, 0.4);
+        3px 3px 0 #FBC02D,
+        6px 6px 10px rgba(255, 204, 128, 0.4);
       transform: rotate(1.2deg);
       position: relative;
-      text-shadow: 0 10px 25px rgba(200, 200, 100, 0.5);
+      text-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
     }
     .made-by::before {
       content: "";
@@ -77,7 +77,7 @@
       left: 20%;
       width: 60%;
       height: 12px;
-      background: rgba(255, 255, 200, 0.7);
+      background: rgba(255, 204, 128, 0.4);
       border-radius: 2px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.2);
       transform: rotate(1.5deg);
@@ -87,11 +87,11 @@
       margin: 60px auto;
       width: 80%;
       background-color: #fffef8;
-      box-shadow: 0 10px 25px rgba(210, 210, 140, 0.4);
+      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
       border-radius: 25px;
       overflow: hidden;
       font-size: 1.2rem;
-      border: 4px double #E6E88A;
+      border: 4px double #fbc02d;
       position: relative;
     }
     table::before {
@@ -101,43 +101,43 @@
       left: 30%;
       width: 40%;
       height: 20px;
-      background: #F6F7C4;
+      background: #ffe082;
       border-radius: 8px;
       transform: rotate(-1deg);
-      box-shadow: 0 10px 25px rgba(210, 210, 140, 0.4);
+      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
       opacity: 0.7;
     }
     th, td {
-      border: 1px solid #E6E88A;
+      border: 1px solid #F9A825;
       padding: 18px;
       text-align: center;
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
     th {
-      background-color: #F6F7C4;
+      background-color: #FFECB3;
       color: #3E2723;
       font-size: 1.3rem;
       letter-spacing: 0.5px;
-      border-bottom: 3px solid #E6E88A;
+      border-bottom: 3px solid #fbc02d;
     }
     tr:nth-child(even) {
-      background-color: #FAFBE2;
+      background-color: #FFFDE7;
     }
     tr:nth-child(odd) {
-      background-color: #FFFFFF;
+      background-color: #FFF8E1;
     }
     tr:hover td {
-      background-color: #E9ECA1;
+      background-color: #FFD54F;
       transform: scale(1.01);
     }
     .highlight td {
-      background-color: #F1F4A1 !important;
+      background-color: #FFEE58 !important;
       transform: scale(1.02);
     }
     td:contains("Break"),
     td:contains("Lunch"),
     td:contains("Study Period") {
-      background-color: #F6F7C4;
+      background-color: #fff9c4;
       font-style: italic;
     }
     table::after {
@@ -177,8 +177,17 @@
       box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
       display: block;
       margin: 15px auto;
+      margin-top: 20px;
       border: 4px solid #FFD54F;
       background-color: #fffef8;
+      transition: all 0.3s ease;
+    }
+    .footer img:hover,
+    .footer iframe:hover {
+      transform: scale(1.05); 
+      box-shadow: 0 8px 25px rgba(255, 220, 120, 0.6);
+      transition: all 0.3s ease; 
+      z-index: 5; 
     }
     .footer p {
       width: 80%;
@@ -204,7 +213,7 @@
       font-size: 1.5rem;
       width: 80%;
       margin: auto;
-      margin-top: -30px;
+      margin-top: -40px;
       line-height: 30px;
       padding: 15px 0;
       text-align: center;
@@ -424,7 +433,7 @@
 
     <div class="footer">
       <div class="media-container">
-    <h2> Hooray! You've reached the end of the day! But wait! Before you go... </h2>
+    <h2 style="margin-top: 10px;"> Hooray! You've reached the end of the day! But wait! Before you go... </h2>
     <h2> You can watch this official trailer of Pride and Prejudice (2005)! 💛 </h2>
     <img src="data:image/webp;base64,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" alt="Pride & Prejudice (2005)">
     <iframe 
@@ -434,7 +443,7 @@
       title="Pride & Prejudice (2005) Official Trailer">
     </iframe>  
     </div>
-    <h2> Hi sir!!! If you haven't noticed yet... I chose the trailer of the movie we are watching in English!!! I may have chosen the image and the video just because I wanted to see Elizabeth and Mr. Darcy together... Hehe...  I might be a little too excited for Pride and Prejudice sir... </h2>
+    <h2 style="margin-top: 5px;"> Hi sir!!! If you haven't noticed yet... I chose the trailer of the movie we are watching in English!!! I may have chosen the image and the video just because I wanted to see Elizabeth and Mr. Darcy together... Hehe...  I might be a little too excited for Pride and Prejudice sir... </h2>
     </div>
     <h1 style="margin-top: 50px;"> Other Potassium Schedules: </h1>
     <div class="other-schedules">
