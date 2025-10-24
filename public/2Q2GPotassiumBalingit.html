@@ -7,362 +7,231 @@
   <meta name="description" content="Potassium Tuesday Schedule">
   <meta name="author" content="BALINGIT, Arabella Roz T.">
   <style>
-    body {
-      font-family: "Poppins", sans-serif;
-      background-color: #FFF8E1;
-      background-image:
-      linear-gradient(to bottom, rgba(255, 240, 180, 0.3) 1px, transparent 1px),
-      repeating-linear-gradient(to bottom, #fff9e6 0px, #fff9e6 28px, #fae8b5 29px, #fae8b5 30px);
-      background-size: 100% 30px;
-      color: #4E342E;
-      text-align: center;
-      margin: 0;
-      padding: 0 30px;
-    }
-    h1 {
-      background: #FFD54F;
-      display: inline-block;
-      padding: 15px 40px;
-      border-radius: 20px;
-      box-shadow: 0 6px 0 #f9a825, 0 10px 25px rgba(255, 204, 128, 0.4);
-      color: #3E2723;
-      font-size: 2.2rem;
-      text-shadow: 0 2px 4px rgba(255, 204, 128, 0.4);
-      transform: rotate(-1.5deg);
-      margin-top: 50px;
-      position: relative;
-    }
-    h1::before, h1::after {
-      content: "";
-      position: absolute;
-      width: 60px;
-      height: 20px;
-      background: repeating-linear-gradient(
-        45deg,
-    #fbc02d,
-    #fbc02d 5px,
-    #fdf292 5px,
-    #fff59d 10px
-  );
-      top: -10px;
-      transform: rotate(-8deg);
-      opacity: 0.8;
-    }
-    h1::before { left: -20px; }
-    h1::after { right: -20px; transform: rotate(8deg); }
-    .header-container {
-      text-align: center;
-    }
-    .made-by {
-      display: block;
-      margin: 12px auto 0 auto;
-      width: fit-content;
-      font-family: "Poppins", sans-serif;
-      color: #4E342E;
-      font-size: 1.05rem;
-      background: #FFF59D;
-      padding: 10px 18px;
-      border-radius: 6px 18px 6px 18px;
-      box-shadow:
-        3px 3px 0 #FBC02D,
-        6px 6px 10px rgba(255, 204, 128, 0.4);
-      transform: rotate(1.2deg);
-      position: relative;
-      text-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-    }
-    .made-by::before {
-      content: "";
-      position: absolute;
-      top: -8px;
-      left: 20%;
-      width: 60%;
-      height: 12px;
-      background: rgba(255, 204, 128, 0.4);
-      border-radius: 2px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-      transform: rotate(1.5deg);
-    }
-    table {
-      border-collapse: collapse;
-      margin: 60px auto;
-      width: 80%;
-      background-color: #fffef8;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      border-radius: 25px;
-      overflow: hidden;
-      font-size: 1.2rem;
-      border: 4px double #fbc02d;
-      position: relative;
-    }
-    table::before {
-      content: "";
-      position: absolute;
-      top: -15px;
-      left: 30%;
-      width: 40%;
-      height: 20px;
-      background: #ffe082;
-      border-radius: 8px;
-      transform: rotate(-1deg);
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      opacity: 0.7;
-    }
-    th, td {
-      border: 1px solid #F9A825;
-      padding: 18px;
-      text-align: center;
-      transition: background-color 0.3s ease, transform 0.2s ease;
-    }
-    th {
-      background-color: #FFECB3;
-      color: #3E2723;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
-      border-bottom: 3px solid #fbc02d;
-    }
-    tr:nth-child(even) {
-      background-color: #FFFDE7;
-    }
-    tr:nth-child(odd) {
-      background-color: #FFF8E1;
-    }
-    tr:hover td {
-      background-color: #FFD54F;
-      transform: scale(1.01);
-    }
-    .highlight td {
-      background-color: #FFEE58 !important;
-      transform: scale(1.02);
-    }
-    td:contains("Break"),
-    td:contains("Lunch"),
-    td:contains("Study Period") {
-      background-color: #fff9c4;
-      font-style: italic;
-    }
-    table::after {
-      position: absolute;
-      font-size: 2rem;
-      color: #ffefa6;
-      right: 20px;
-      bottom: 10px;
-      opacity: 0.5;
-    }
-    .footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 25px;
-      padding: 40px 20px;
-      margin: 50px auto;
-      background-color: #fffef8;
-      border-radius: 25px;
-      border: 4px double #fbc02d;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      width: 80%;
-    }
-    .media-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      width: 90%;
-    }
-    .footer img,
-    .footer iframe {
-      width: 80%;
-      max-width: 500px;
-      border-radius: 15px;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      display: block;
-      margin: 15px auto;
-      margin-top: 20px;
-      border: 4px solid #FFD54F;
-      background-color: #fffef8;
-      transition: all 0.3s ease;
-    }
-    .footer img:hover,
-    .footer iframe:hover {
-      transform: scale(1.05); 
-      box-shadow: 0 8px 25px rgba(255, 220, 120, 0.6);
-      transition: all 0.3s ease; 
-      z-index: 5; 
-    }
-    .footer p {
-      width: 80%;
-      font-size: 1.1rem;
-      color: #4E342E;
-      text-align: justify;
-      line-height: 1.8;
-    }
-    a:link {
-      color: #3E2723;
-      text-decoration: none;
-    }
-    a:visited {
-      color: #5D4037;
-    }
-    a:hover {
-      color: #BF360C;
-      text-decoration: underline;
-    }
-    h2 {
-      font-family: "Poppins", sans-serif;
-      color: #4E342E;
-      font-size: 1.5rem;
-      width: 80%;
-      margin: auto;
-      margin-top: -40px;
-      line-height: 30px;
-      padding: 15px 0;
-      text-align: center;
-      background: transparent;
-      position: relative;
-      top: 5px;
-    }
-    .other-schedules h2 {
-      font-family: "Poppins", sans-serif;
-      color: #4E342E;
-      font-size: 1.5rem;
-      width: 80%;
-      margin: auto;
-      margin-top: -30px;
-      line-height: 30px;
-      padding: 15px 0;
-      text-align: center;
-      background: transparent;
-      position: relative;
-      top: 5px;
-    }
-    .other-schedules h2 a {
-      text-decoration: none;
-      color: #3E2723;
-      background-color: #FFF59D; 
-      display: inline-block;
-      padding: 12px 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 0 #fbc02d, 0 6px 10px rgba(255, 204, 128, 0.4);
-      transition: all 0.2s ease;
-      transform: rotate(-1.5deg);
-      position: relative;
-    }
-    .other-schedules h2 a::before {
-      content: "";
-      position: absolute;
-      top: -10px;
-      left: 20px;
-      width: 60%;
-      height: 12px;
-      background: repeating-linear-gradient(
-        45deg,
-    #ffe082,
-    #ffe082 4px,
-    #fff9c4 4px,
-    #fff9c4 8px
-  );
-      border-radius: 1px;
-      opacity: 0.8;
-    }
-    .other-schedules h2 a:hover {
-      background-color: #FFEB3B;
-      transform: rotate(0deg) scale(1.05);
-      box-shadow: 0 6px 0 #fbc02d, 0 10px 25px rgba(255, 204, 128, 0.4);
-    }
-    .other-schedules h2 + h2 {
-      margin-top: 3px; 
-    }
-    .other-schedules {
-      text-align: center;
-      color: #4E342E;
-      margin-top: 20px;
-    }
-    .other-schedules a {
-      text-decoration: none; 
-      color: #4E342E;
-      display: inline-block;
-      background-color: none; 
-      padding: 0 5px;
-      transform: translateY(10px); 
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.5rem;
-      border-radius: 4px;
-    }
-    .other-schedules a:hover {
-      background-color: #FFD54F;
-      transform: scale(1.01)translateY(10px);
-    }
-    footer {
-      width: 80%;
-      margin: 60px auto;
-      background-color: #fffef8;
-      border: 4px double #fbc02d;
-      border-radius: 25px;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      padding: 30px 20px;
-      text-align: center;
-      color: #3E2723;
-      font-size: 1.1rem;
-      box-sizing: border-box;
-    }
-    footer .social-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    footer .social-list li {
-      display: inline-block;
-      margin: 10px 20px;
-    }
-    footer .social-list a {
-      font-family: "Poppins", sans-serif;
-      text-decoration: none;
-      color: #3E2723;
-      background-color: #FFF59D;
-      padding: 10px 25px;
-      border-radius: 12px;
-      box-shadow: 0 4px 0 #fbc02d, 0 6px 10px rgba(255, 204, 128, 0.4);
-      transition: all 0.2s ease;
-      font-size: 1.1rem;
-      font-weight: 700;
-    }
-    footer .social-list a:hover {
-      background-color: #FFEB3B;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 0 #fbc02d, 0 8px 15px rgba(0, 0, 0, 0.2);
-    }
-    .footer-box {
-      width: 80%;
-      margin: 60px auto 40px;
-      background-color: #fffef8;
-      border: 4px double #fbc02d;
-      border-radius: 25px;
-      box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
-    .copyright {
-      font-family: "Poppins", sans-serif;
-      font-size: 1.2rem;
-      color: #5d4037;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-      margin: 0;
-    }
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Delius', cursive;
+  margin: 0;
+  background-color: #FFF9E3; 
+  font-size: 22px;
+  color: #4E342E;
+  text-align: center;
+}
+.header {
+  background-color: #FFF4B8; 
+  padding: 25px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 12px rgba(255, 204, 64, 0.4);
+  z-index: 1000;
+}
+.title {
+  font-family: Rockwell, serif;
+  font-weight: bold;
+  color: #5C4033;
+  font-size: 1.4rem;
+}
+.header a {
+  color: #5C4033;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+.header a.active,
+.header a:hover {
+  background-color: #FFED75; 
+  color: #8B6A00;
+}
+.monday:hover {
+  background-color: #FFD8D8;
+  color: #B85B5B;
+}
+.tuesday:hover {
+  background-color: #FFF988;
+  color: #B9A300;
+}
+.thursday:hover {
+  background-color: #D9FFD0;
+  color: #66A95D;
+}
+.friday:hover {
+  background-color: #C7F3FF;
+  color: #4D97B3;
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+  .header a {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+main {
+  padding-top: 100px;
+}
+table {
+  width: 80%;
+  margin: 150px auto 40px auto;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 3px solid #FFCA28;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #FFFBE0;
+  box-shadow: 0 0 25px rgba(255, 204, 128, 0.5);
+}
+th, td {
+  padding: 15px;
+  width: 33%;
+  border: 2px solid #FBC02D;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 22px;
+  color: #5C4033;
+}
+th {
+  background-color: #FFD54F;
+  color: #3E2723;
+}
+tr:nth-child(even) td:first-child {
+  background-color: #FFF8D8;
+}
+tr:hover {
+  background-color: #FFF2AA;
+  transition: 0.3s;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 50px 20px;
+  margin: 70px auto;
+  background-color: #FFFCF0;
+  border-radius: 25px;
+  border: 4px double #FFCC4D;
+  box-shadow: 0 10px 25px rgba(255, 204, 128, 0.4);
+  width: 80%;
+  margin-top: -35px;
+}
+.media-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-bottom: 20px; 
+}
+.footer img,
+.footer iframe {
+  width: 80%;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 4px solid #FFD54F;
+  box-shadow: 0 8px 20px rgba(255, 204, 128, 0.5);
+  background-color: #fffef8;
+  transition: all 0.3s ease;
+}
+.footer img:hover,
+.footer iframe:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 28px rgba(255, 200, 80, 0.6);
+  z-index: 5;
+}
+.footer p {
+  width: 80%;
+  font-size: 1.1rem;
+  color: #4E342E;
+  text-align: justify;
+  line-height: 1.8;
+  margin-top: 30px;
+}
+a:link {
+  color: #3E2723;
+  text-decoration: none;
+}
+a:visited {
+  color: #5D4037;
+}
+a:hover {
+  color: #BF360C;
+  text-decoration: underline;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: #4E342E;
+  font-size: 1.5rem;
+  width: 80%;
+  margin: 10px auto;
+  line-height: 30px;
+  padding: 15px 0;
+  text-align: center;
+}
+.footer-box {
+  background-color: #FFF8CC;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  border-top: 2px solid #FFD54F;
+}
+.footer-box p {
+  font-size: 1rem;
+  color: #4E342E;
+}
+.box-sched {
+        background-color: rgb(255, 239, 203);
+        border: 3px solid #FFCC4D;
+        border-bottom: none;
+        border-radius: 20px;
+        line-height: 7px;
+        padding: 8px;
+        width: 80%;
+        margin: 0;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(255, 200, 80, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 50px;
+        }
+         .box-sched h2 {
+        color: #ffeec4;
+        }
+        .copyright {
+        color: #FFCC4D;
+        font-size: 20px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 100;
+        }
   </style>
 </head>
   <body>
     <div class="header-container">
     <div class="header">
-    <h1>Potassium Tuesday Schedule !!!</h1>
     </div>
-    <h1 class="made-by"> Made by: BALINGIT, Arabella Roz T. of 9 - Potassium </h1>
     </div>
     <table>
       <tr>
-      <th> Time </th>
-      <th> Subject </th>
-      <th> Remarks / Notes / Reminders </th>
+      <th> Time ⭒˚.⋆ </th>
+      <th> Subject/Activity ⭒˚.⋆ </th>
+      <th> Remarks ⭒˚.⋆ </th>
       </tr>
       <tr class="physics">
       <td> 7:30 AM - 8:15 AM </td>
@@ -431,6 +300,7 @@
       </tr>
     </table>
 
+    <main>
     <div class="footer">
       <div class="media-container">
     <h2 style="margin-top: 10px;"> Hooray! You've reached the end of the day! But wait! Before you go... </h2>
@@ -445,35 +315,22 @@
     </div>
     <h2 style="margin-top: 5px;"> Hi sir!!! If you haven't noticed yet... I chose the trailer of the movie we are watching in English!!! I may have chosen the image and the video just because I wanted to see Elizabeth and Mr. Darcy together... Hehe...  I might be a little too excited for Pride and Prejudice sir... </h2>
     </div>
-    <h1 style="margin-top: 50px;"> Other Potassium Schedules: </h1>
-    <div class="other-schedules">
-    <h2> <a href="https://1sacodez.github.io/CS3_2ndQtrPortfolio/public/2Q1GPotassiumBuban.html"> Potassium Monday Schedule </a> </h2>
-    <h2> <a href="https://ninatuddao.github.io/CS3_1stQtrPortfolio/public/2Q1GPotassiumTuddao.html"> Potassium Thursday Schedule </a> </h2>
-    <h2> <a href="https://ejmpurisima.github.io/CS3_1stQtrPortfolio/public/2Q1GPotassiumPurisima.html"> Potassium Friday Schedule </a> </h2>
+    </main>
+
+    <div class="box-sched">
+    <p class="copyright">&copy; 2025 Balingit • Buban • Purisima • Tuddao</p>
     </div>
-    <footer>
-    <ul class="social-list">
-    <li><a href="https://github.com/b2029artbalingit/CS3_1stQtrPortfolio" target="_blank" rel="noopener noreferrer"> GitHub </a></li>
-    </ul>
-    </footer>
-    <footer class="footer-box">
-    <p class="copyright">
-    &copy; <span id="year"></span> Balingit • Buban • Purisima • Tuddao. All rights reserved.
-    </p>
-    </footer>
+
+    <div class="header">
+    <b><a href="#default" class="title"> Potassium 2029 Schedules! By: Arabella Roz T. Balingit from 9 - Potassium</a></b>
+    <div class="header-right">
+    <a class="monday" href="https://1sacodez.github.io/CS3_2ndQtrPortfolio/public/2Q1GPotassiumBuban.html"> Monday </a>
+    <a class="nav-link tuesday active" href="https://b2029artbalingit.github.io/CS3_1stQtrPortfolio/public/2Q2GPotassiumBalingit.html"> Tuesday </a>
+    <a class="thursday" href="https://ninatuddao.github.io/CS3_2ndQtrPortfolio/public/2Q2GPotassiumTuddao.html"> Thursday </a>
+    <a class="friday" href="https://ejmpurisima.github.io/CS3_2ndQtrPortfolio/public/Q22GPotassiumPurisima.html"> Friday </a>
+    </div>
+
     <script>
-    const groups = ["physics", "compsci"];
-    groups.forEach(group => {
-      const rows = document.querySelectorAll(`.${group}`);
-      rows.forEach(row => {
-        row.addEventListener("mouseenter", () => {
-          rows.forEach(r => r.classList.add("highlight"));
-        });
-        row.addEventListener("mouseleave", () => {
-          rows.forEach(r => r.classList.remove("highlight"));
-        });
-      });
-    });
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
   </body>
